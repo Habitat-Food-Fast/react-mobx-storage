@@ -1,5 +1,6 @@
 import { IStorageEngine } from './storage'
-import AsyncStorage from '@react-native-async-storage/async-storage'
+const AsyncStorage = require('@react-native-async-storage/async-storage')
+  .default
 
 const Implementation: IStorageEngine = {
   get(key) {
