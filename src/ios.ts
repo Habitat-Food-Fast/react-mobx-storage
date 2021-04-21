@@ -1,10 +1,9 @@
 import { IStorageEngine } from './storage'
-
-import { AsyncStorage } from '@react-native-community/async-storage'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 const Implementation: IStorageEngine = {
   get(key) {
-    return AsyncStorage.getItem(key).then(val => JSON.parse(val))
+    return AsyncStorage.getItem(key).then((val: any) => JSON.parse(val))
   },
   save(key, value) {
     // AsyncStorage throws an exception for undefined values
@@ -16,7 +15,7 @@ const Implementation: IStorageEngine = {
   },
   keys() {
     return AsyncStorage.getAllKeys()
-  }
+  },
 }
 
 export default Implementation

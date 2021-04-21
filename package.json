@@ -1,6 +1,6 @@
 {
-  "name": "react-mobx-storage",
-  "version": "0.3.0",
+  "name": "react-mobx-storage-habitat",
+  "version": "0.5.0",
   "description": "Easy cross-platform storage API for React and React Native",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -31,6 +31,6 @@
     "typescript": "3.5.3"
   },
   "optionalDependencies": {
-    "@react-native-community/async-storage": "1.6.1"
+    "@react-native-async-storage/async-storage": "^1.15.3"
   }
 }
